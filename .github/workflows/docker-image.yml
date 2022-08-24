@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag kishoredurai/docker-image-autobuild:latest
     - name: Push the Docker image
-      run:  docker login -u kishoredurai -p ${{ secrets.DOCKER_TOKEN }} && docker push kishoredurai/docker-iamge-autobuild:latest
+      run:  docker login -u kishoredurai -p ${{ secrets.DOCKER_TOKEN }} && docker push kishoredurai/docker-image-autobuild:latest
